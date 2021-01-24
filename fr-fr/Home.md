@@ -12,14 +12,14 @@ Nous développons ce projet sur notre temps libre. Si vous appréciez ce qui est
 
 L'objectif de ce plugin est de réaliser une passerelle entre une [Zigate](https://zigate.fr), un récepteur ZigBee et le logiciel de domotique [DomoticZ](https://www.domoticz.com). Ce plugin permettra de gérer tous les dispositifs ZigBee utilisés par DomoticZ.
 
-Le plugin dispose d'une interface utilisateur dédiée accessible depuis votre navigateur web. Cette interface permettra de configurer le plugin et régler le fonctionnement de la Zigate.
+Le plugin dispose d'une interface utilisateur dédiée accessible depuis votre navigateur web permettant de configurer le plugin mais également de régler le fonctionnement de la ZiGate.
 
-Voici une liste non exhaustive des dispositifs compatibles. Ceux présents dans la liste ont été "certifiés" : nous savons qu'ils fonctionnent avec le plugin. Il est possible qu'il y ait d'autres dispositifs ZigBee qui fonctionnent (merci de nous remonter l'info afin que nous mettions la liste à jour)
+Le lien ci dessous présente une liste non exhaustive des dispositifs compatibles certifiés comme fonctionnant correctement avec ce plugin. Dans le cas où vous rencontriez d'autres dispositifs ZigBee (non listés) compatibles avec ce plugin merci de nous remonter l'information afin que nous mettions cette liste à jour.
 * [Liste des dispositifs compatibles](https://github.com/pipiche38/Domoticz-Zigate-Wiki/blob/master/en-eng/Compatible-Devices.md)
 
 ## Installation
 
-Il existe plusieurs façons d'installer le plugin Zigate pour DomoticZ qui sont différentes en fonction du système d'exploitation.
+Il existe differentes façons d'installer le plugin Zigate pour DomoticZ selon le système d'exploitation.
 
 Dans tous les cas, le plugin nécessite DomoticZ version 3.87 ou supérieure et Python version 3.5 ou supérieur. Assurez-vous que le paquet __python3-dev__ est installé. Plus d'informations sur la page [DomoticZ Python plugin](https://www.domoticz.com/wiki/Using_Python_plugins).
 
