@@ -5,16 +5,16 @@ Mesh Network = Réseau maillé = topologie réseau décentralisée - [Voir Wikip
 ## Comment construire votre réseau Zigbee (et le maintenir)
 
 Si vous utilisez des dispositifs Zigbee, vous devez comprendre que le réseau maillé Zigbee est la pierre angulaire de votre domotique.
-Ce réseau maillé permet aux dispositifs Zigbee de communiquer entre eux et avec la passerelle Zigbee (ZiGate). Bien que les dispositifs construisent automatiquement le maillage, cette opération n'est pas instantannée. Il est donc nécessaire d'attendre que le réseau s'elabore avant de commencer à automatiser vos dispositifs.
+Ce réseau maillé permet aux dispositifs Zigbee de communiquer entre eux et avec la passerelle Zigbee (ZiGate). Bien que les dispositifs construisent automatiquement le maillage, cette opération n'est pas instantannée. Il est donc nécessaire d'attendre que le réseau s'élabore avant de commencer à automatiser vos dispositifs.
+En automatisant trop précipitamment, vous risquez, notamment, d'etre confronté à des pertes de dispositifs.
 
-This mesh network is the way Zigbee devices communicate with each other and with the Hubitat Elevation™ hub.
-Zigbee devices build this communication mesh automatically, but it is not instantaneous.
-You MUST give your Zigbee mesh time to establish itself BEFORE automating your Zigbee devices.
-Automating devices too quickly can lead to frustration due to dropped devices and other issues down the road.
-It may take several days for your Zigbee mesh to automatically find the optimal routing,
-however if you power down your hub for 20 minutes, you can expedite the process of re-building the wireless mesh.
+**A noter :** La constitution de votre maillage Zigbee peut prendre plusieurs jours afin de trouvrer les routages optimaux, cependant en stoppant le module central (ZiGate) durant 20 minutes, vous relancez le process de re-découverte du maillage réseau.
 
-To maintain a successful communication, all Zigbee devices must be accessible. Adding devices near the Hubitat Elevation™ hub, then moving them to their final location may lead to dropped device and other issues down the road. Therefore, it is recommended to always pair your devices in their final, intended location. Although the hub can support up to 32 directly connected devices, one or more Zigbee repeating devices will help strengthen the ability of your devices to maintain communication with the hub. Your environment, the distance to the furthest device, obstructions and device performance will determine the number of repeating devices required. A Zigbee repeating device is one that is plugged into an outlet or powered by mains voltages. Battery powered Zigbee devices do not repeat signals. They are known as end devices, whereas Zigbee repeating devices are routers.
+Pour disposer, tous les dispositifs Zigbee doivent etre accessibles de la ZiGate. En ajoutant les dispositifs à proximité de votre ZiGate (routeur principal), puis en le déplaçant à l'emplacement final conduit souvent à une perte du dispositif au sein du réseau. Il est donc recommandé de toujours appairer vos dispositifs depuis leur emplacement final.  
+
+
+
+Although the hub can support up to 32 directly connected devices, one or more Zigbee repeating devices will help strengthen the ability of your devices to maintain communication with the hub. Your environment, the distance to the furthest device, obstructions and device performance will determine the number of repeating devices required. A Zigbee repeating device is one that is plugged into an outlet or powered by mains voltages. Battery powered Zigbee devices do not repeat signals. They are known as end devices, whereas Zigbee repeating devices are routers.
 
 Follow these procedures when discovering your Zigbee devices to establish a strong Zigbee network. Please be patient, as it is key to success.
 
