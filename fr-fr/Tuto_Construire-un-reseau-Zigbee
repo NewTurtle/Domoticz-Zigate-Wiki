@@ -1,0 +1,31 @@
+Ceci est une traduction francaise de cette page (How to Build a Solid Zigbee Mesh)[https://docs.hubitat.com/index.php?title=How_to_Build_a_Solid_Zigbee_Mesh]
+
+# Comment construire/maintenir un bon réseau Zigbee (Mesh)
+
+## Comment construire ou conserver votre réseau Zigbee (Mesh)
+
+Si vous utilisez des dispositifs Zigbee, vous devez comprendre que le réseau meshé Zigbee est la pierre angulaire de votre domotique.
+Ce réseau meshé est le 
+
+How to Build Your Zigbee Mesh (or Keeping your Zigbee Mesh Happy)
+If you use Zigbee devices, your Zigbee mesh is the backbone of your home automations. This mesh network is the way Zigbee devices communicate with each other and with the Hubitat Elevation™ hub. Zigbee devices build this communication mesh automatically, but it is not instantaneous. You MUST give your Zigbee mesh time to establish itself BEFORE automating your Zigbee devices. Automating devices too quickly can lead to frustration due to dropped devices and other issues down the road. It may take several days for your Zigbee mesh to automatically find the optimal routing, however if you power down your hub for 20 minutes, you can expedite the process of re-building the wireless mesh.
+
+To maintain a successful communication, all Zigbee devices must be accessible. Adding devices near the Hubitat Elevation™ hub, then moving them to their final location may lead to dropped device and other issues down the road. Therefore, it is recommended to always pair your devices in their final, intended location. Although the hub can support up to 32 directly connected devices, one or more Zigbee repeating devices will help strengthen the ability of your devices to maintain communication with the hub. Your environment, the distance to the furthest device, obstructions and device performance will determine the number of repeating devices required. A Zigbee repeating device is one that is plugged into an outlet or powered by mains voltages. Battery powered Zigbee devices do not repeat signals. They are known as end devices, whereas Zigbee repeating devices are routers.
+
+Follow these procedures when discovering your Zigbee devices to establish a strong Zigbee network. Please be patient, as it is key to success.
+
+32 or less battery powered Zigbee devices
+Pair your Zigbee devices one at a time. See Discovering you Devices for detail instructions on adding devices to your Hubitat Elevation™ hub.
+The distance to your hub, building materials, metal objects and obstructions, as well as the performance of the end devices will determine the maximum distance possible without losing communication with the hub.
+32 or more Zigbee devices
+Hubitat Elevation™ can support up to 32 end devices (devices connected directly to the hub without the help of a repeating device). Beyond 32 battery powered or non-repeating end devices, you must add mains powered repeating devices. A Zigbee repeating device is one that is plugged into an outlet or powered by mains voltages. Battery powered Zigbee devices do not repeat signals. End devices only communicate with a parent device, which could be the hub or it could be a repeater. Zigbee repeating devices (Routers) communicate with both the hub and End devices. Your environment, distance to the furthest device from the hub, and the range of the Zigbee repeating devices will determine the correct number of repeating devices required. Unlike Z-Wave, there is no limit to the number of Zigbee devices that can be added to your network, as long as there are an adequate number of repeating devices and they are properly distanced from each other.
+
+Pair your Zigbee repeating devices one at a time. See Discovering your Devices for detail instructions on adding devices to your Hubitat Elevation™ hub.
+Now pair your Zigbee battery powered devices one at a time, in their intended location, within range of either the hub or a Zigbee router. See Discovering your Devices for detail instructions on adding devices to your Hubitat Elevation™ hub.
+When all of your devices have been added, power down your hub for 20 minutes. After booting Hubitat Elevation™ again, your Zigbee mesh will automatically choose the best route for your devices within approximately a 24 hour period. Alternatively, you can wait several days for the Zigbee mesh to establish the best path for communication between the hub and your devices by itself.
+How Zigbee Repeaters (Routers) Work
+A Zigbee repeater or router, is a messenger that relays information, until the messages between end devices and the hub have reached one another.
+
+Zigbee repeaters may be any device that will always powered by mains voltages (but be cautious with Zigbee bulbs that may repeat; see Tips for designing your Zigbee mesh). A Zigbee outlet is an example of a repeater acting as a relay point for devices that are too far from the hub to reliably send and receive signals. ZigBee and Z-Wave are two different wireless protocols, therefore a mains powered ZigBee device can only function as a repeater for other ZigBee devices, and Z-Wave devices only act as repeaters for other Z-Wave devices.
+
+Devices too far from the hub or obstructions will result in dropped connections from weak Zigbee signals.
