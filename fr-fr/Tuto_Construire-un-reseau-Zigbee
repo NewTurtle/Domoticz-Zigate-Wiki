@@ -1,13 +1,11 @@
 # Comment construire/maintenir un bon réseau maillé Zigbee
 
-Mesh Network = Réeeau maillé = topologie réseau décentralisée - [Voir Wikipedia Reseau maillé](https://fr.wikipedia.org/wiki/Topologie_mesh)
+Mesh Network = Réseau maillé = topologie réseau décentralisée - [Voir Wikipedia Reseau maillé](https://fr.wikipedia.org/wiki/Topologie_mesh)
 
 ## Comment construire votre réseau Zigbee (et le maintenir)
 
 Si vous utilisez des dispositifs Zigbee, vous devez comprendre que le réseau maillé Zigbee est la pierre angulaire de votre domotique.
-Ce réseau maillé permet aux dispositifs Zigbee de communiquer entre eux et avec la passerelle Zigbee (ZiGate).
-Bien que les dispositifs construisent automatiquement le maillage, cette opération n'est pas instantannée. Sachant cela 
-
+Ce réseau maillé permet aux dispositifs Zigbee de communiquer entre eux et avec la passerelle Zigbee (ZiGate). Bien que les dispositifs construisent automatiquement le maillage, cette opération n'est pas instantannée. Il est donc nécessaire d'attendre que le réseau s'elabore avant de commencer à automatiser vos dispositifs.
 
 This mesh network is the way Zigbee devices communicate with each other and with the Hubitat Elevation™ hub.
 Zigbee devices build this communication mesh automatically, but it is not instantaneous.
