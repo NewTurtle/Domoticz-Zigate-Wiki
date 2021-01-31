@@ -1,14 +1,22 @@
 Ceci est une traduction francaise de cette page (How to Build a Solid Zigbee Mesh)[https://docs.hubitat.com/index.php?title=How_to_Build_a_Solid_Zigbee_Mesh]
 
-# Comment construire/maintenir un bon réseau Zigbee (Mesh)
+# Comment construire/maintenir un bon réseau maillé Zigbee
 
-## Comment construire ou conserver votre réseau Zigbee (Mesh)
+Mesh Network = Réeeau maillé = topologie réseau décentralisée - (Voir Wikipedia Reseau maillé)[https://fr.wikipedia.org/wiki/Topologie_mesh]
 
-Si vous utilisez des dispositifs Zigbee, vous devez comprendre que le réseau meshé Zigbee est la pierre angulaire de votre domotique.
-Ce réseau meshé est le 
+## Comment construire votre réseau Zigbee (et le maintenir)
 
-How to Build Your Zigbee Mesh (or Keeping your Zigbee Mesh Happy)
-If you use Zigbee devices, your Zigbee mesh is the backbone of your home automations. This mesh network is the way Zigbee devices communicate with each other and with the Hubitat Elevation™ hub. Zigbee devices build this communication mesh automatically, but it is not instantaneous. You MUST give your Zigbee mesh time to establish itself BEFORE automating your Zigbee devices. Automating devices too quickly can lead to frustration due to dropped devices and other issues down the road. It may take several days for your Zigbee mesh to automatically find the optimal routing, however if you power down your hub for 20 minutes, you can expedite the process of re-building the wireless mesh.
+Si vous utilisez des dispositifs Zigbee, vous devez comprendre que le réseau maillé Zigbee est la pierre angulaire de votre domotique.
+Ce réseau maillé permet aux dispositifs Zigbee de communiquer entre eux et avec la passerelle Zigbee (ZiGate).
+Bien que les dispositifs construisent automatiquement le maillage, cette opération n'est pas instantannée. Sachant cela 
+
+
+This mesh network is the way Zigbee devices communicate with each other and with the Hubitat Elevation™ hub.
+Zigbee devices build this communication mesh automatically, but it is not instantaneous.
+You MUST give your Zigbee mesh time to establish itself BEFORE automating your Zigbee devices.
+Automating devices too quickly can lead to frustration due to dropped devices and other issues down the road.
+It may take several days for your Zigbee mesh to automatically find the optimal routing,
+however if you power down your hub for 20 minutes, you can expedite the process of re-building the wireless mesh.
 
 To maintain a successful communication, all Zigbee devices must be accessible. Adding devices near the Hubitat Elevation™ hub, then moving them to their final location may lead to dropped device and other issues down the road. Therefore, it is recommended to always pair your devices in their final, intended location. Although the hub can support up to 32 directly connected devices, one or more Zigbee repeating devices will help strengthen the ability of your devices to maintain communication with the hub. Your environment, the distance to the furthest device, obstructions and device performance will determine the number of repeating devices required. A Zigbee repeating device is one that is plugged into an outlet or powered by mains voltages. Battery powered Zigbee devices do not repeat signals. They are known as end devices, whereas Zigbee repeating devices are routers.
 
