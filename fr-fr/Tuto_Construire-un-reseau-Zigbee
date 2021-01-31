@@ -1,8 +1,9 @@
-Ceci est une traduction francaise de cette page (How to Build a Solid Zigbee Mesh)[https://docs.hubitat.com/index.php?title=How_to_Build_a_Solid_Zigbee_Mesh]
+
+Ceci est une traduction francaise de cette page [How to Build a Solid Zigbee Mesh](https://docs.hubitat.com/index.php?title=How_to_Build_a_Solid_Zigbee_Mesh)
 
 # Comment construire/maintenir un bon réseau maillé Zigbee
 
-Mesh Network = Réeeau maillé = topologie réseau décentralisée - (Voir Wikipedia Reseau maillé)[https://fr.wikipedia.org/wiki/Topologie_mesh]
+Mesh Network = Réeeau maillé = topologie réseau décentralisée - [Voir Wikipedia Reseau maillé](https://fr.wikipedia.org/wiki/Topologie_mesh)
 
 ## Comment construire votre réseau Zigbee (et le maintenir)
 
