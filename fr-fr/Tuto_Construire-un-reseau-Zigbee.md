@@ -36,11 +36,10 @@ Quand tous vos objets sont appairés, arrêtez votre ZiGate durant une vingtaine
 
 ## Comment fonctionnent les routeurs Zigbee ?
 Les routeurs Zigbee (ou répéteur) relaient les informations entre la ZiGate et l'objet destination en assurant la transmission (validation de réception).
-Comme mentionné plus haut, un routeur est un objet connecté qui tire son alimentation du secteur (220v pour la France); attention, cependant avec les ampoules qui peuvent 
+Comme mentionné plus haut, un routeur est un objet connecté qui tire son alimentation du secteur (220v pour la France); attention, cependant avec les ampoules qui peuvent etre egalement routeurs (voir la section Astuces pour un bon réseau maillé ZigBee). Par exemple, les prises Zigbee qui agissent en routeur, en relai, vers les objets qui sont trop éloignés de la ZiGate permettent de fiabiliser l'emmission et la réception du signal.
+Zigbee et Z-Wave sont deux protocoles de communication sans fil très differents; ainsi avec le Zigbee, seuls les objects alimentés sur secteur ont une fonction routeur/répéteur vers les autres objets alors qu'avec le Z-Wave les objets se comportent tous en routeur vers tous les autres objets Z-Wave.
 
-Zigbee repeaters may be any device that will always powered by mains voltages (but be cautious with Zigbee bulbs that may repeat; see Tips for designing your Zigbee mesh). A Zigbee outlet is an example of a repeater acting as a relay point for devices that are too far from the hub to reliably send and receive signals. ZigBee and Z-Wave are two different wireless protocols, therefore a mains powered ZigBee device can only function as a repeater for other ZigBee devices, and Z-Wave devices only act as repeaters for other Z-Wave devices.
-
-Devices too far from the hub or obstructions will result in dropped connections from weak Zigbee signals.
+[Des objets trop éloignés de la ZiGate ou génés par des interférences générent des pertes de connexion liées à un signal Zigbee trop faible](Images/ZigateDirectLink.png)
 
 
 Ceci est une traduction francaise de cette page [How to Build a Solid Zigbee Mesh](https://docs.hubitat.com/index.php?title=How_to_Build_a_Solid_Zigbee_Mesh)
