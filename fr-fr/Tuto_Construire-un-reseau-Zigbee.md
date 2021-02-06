@@ -34,7 +34,7 @@ Quand tous vos objets sont appairés, arrêtez votre ZiGate durant une vingtaine
 
 ## Comment fonctionnent les routeurs Zigbee ?
 Les routeurs Zigbee (ou répéteur) relaient les informations entre la ZiGate et l'objet destination en assurant la transmission (validation de réception).
-Comme mentionné plus haut, un routeur est un objet connecté qui tire son alimentation du secteur (220v pour la France); attention, cependant avec les ampoules qui peuvent etre egalement routeurs (voir la section [Astuces](#Astuces pour créer un réseau maillé ZigBee) pour un bon réseau maillé ZigBee). Par exemple, les prises Zigbee qui agissent en routeur, en relai, vers les objets qui sont trop éloignés de la ZiGate permettent de fiabiliser l'emmission et la réception du signal.
+Comme mentionné plus haut, un routeur est un objet connecté qui tire son alimentation du secteur (220v pour la France); attention, cependant avec les ampoules qui peuvent etre egalement routeurs (voir la section [Astuces](#astuces-pour-créer-un-réseau-maillé-zigBee) pour un bon réseau maillé ZigBee). Par exemple, les prises Zigbee qui agissent en routeur, en relai, vers les objets qui sont trop éloignés de la ZiGate permettent de fiabiliser l'emmission et la réception du signal.
 Zigbee et Z-Wave sont deux protocoles de communication sans fil très differents; ainsi avec le Zigbee, seuls les objects alimentés sur secteur ont une fonction routeur/répéteur vers les autres objets alors qu'avec le Z-Wave les objets se comportent tous en routeur vers tous les autres objets Z-Wave.
 
 Des objets trop éloignés de la ZiGate ou génés par des interférences générent des pertes de connexion liées à un signal Zigbee trop faible.
