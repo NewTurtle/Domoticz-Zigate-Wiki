@@ -4,27 +4,32 @@ Mesh Network = Réseau maillé = topologie réseau décentralisée - [Voir Wikip
 
 ## Comment construire votre réseau Zigbee (et le maintenir)
 
-Si vous utilisez des dispositifs Zigbee, vous devez comprendre que le réseau maillé Zigbee est la pierre angulaire de votre domotique.
-Ce réseau maillé permet aux dispositifs Zigbee de communiquer entre eux et avec la passerelle Zigbee (ZiGate). Bien que les dispositifs construisent automatiquement le maillage, cette opération n'est pas instantannée. Il est donc nécessaire d'attendre que le réseau s'élabore avant de commencer à automatiser vos dispositifs.
-En automatisant trop précipitamment, vous risquez, notamment, d'etre confronté à des pertes de dispositifs.
+Si vous utilisez des objets Zigbee, vous devez comprendre que le réseau maillé Zigbee est la pierre angulaire de votre domotique.
+Ce réseau maillé permet aux objets Zigbee de communiquer entre eux et avec la passerelle Zigbee (ZiGate). Bien que les objets construisent automatiquement le maillage, cette opération n'est pas instantannée. Il est donc nécessaire d'attendre que le réseau s'élabore avant de commencer à automatiser vos objets.
+En automatisant trop précipitamment, vous risquez, notamment, d'etre confronté à des pertes de objets.
 
 **A noter :** La constitution de votre maillage Zigbee peut prendre plusieurs jours afin de trouvrer les routes optimales, cependant en stoppant le module central (ZiGate) durant 20 minutes, vous relancez le process de re-découverte du maillage réseau.
 
-Pour disposer, tous les dispositifs Zigbee doivent etre accessibles de la ZiGate. En ajoutant les dispositifs à proximité de votre ZiGate (routeur principal), puis en le déplaçant à l'emplacement final conduit souvent à une perte du dispositif au sein du réseau. Il est donc recommandé de toujours appairer vos dispositifs depuis leur emplacement final.
+Pour disposer, tous les objets Zigbee doivent etre accessibles de la ZiGate. En ajoutant les objets à proximité de votre ZiGate (routeur principal), puis en le déplaçant à l'emplacement final conduit souvent à une perte du objet au sein du réseau. Il est donc recommandé de toujours appairer vos objets depuis leur emplacement final.
 
-Même si votre Zigate supporte jusqu'à XXXX dispositifs connectés directement, un ou plusieurs dispositifs router contribueront à maintenirunbe bonne communication entre les dispositifs et la Zigate. Considerons votre environnement! La distance avec les dispositifs les plus éloignés, les obstructions du signal (murs épais, zones metalliques, etc...) et la performance intrinsèque du dispositif vont déterminer le nombre de dispositif router nécessaire pour un bon maillage.
-Un router Zigbee est un dispositif alimenté sur le secteur, généralement des prises (plug) ou interrupteurs (wall switches). Par conséquent les dispositifs Zigbee alimentés sur baterie ne permettent pas de repeter le signal Zigbee, ils sont designés en tant que dispositifs terminaux (end devices) à contrario des routeurs qui eux repetent le signal Zigbee.
+Même si votre Zigate supporte jusqu'à 40 objets connectés directement, un ou plusieurs objets router contribueront à maintenir une bonne communication entre les objets et la Zigate. Considerons votre environnement! La distance avec les objets les plus éloignés, les obstructions du signal (murs épais, zones metalliques, etc...) et la performance intrinsèque du objet vont déterminer le nombre de objet router nécessaire pour un bon maillage.
+Un router Zigbee est un objet alimenté sur le secteur, généralement des prises (plug) ou interrupteurs (wall switches). Par conséquent les objets Zigbee alimentés sur baterie ne permettent pas de repeter le signal Zigbee, ils sont designés en tant que objets terminaux (end devices) à contrario des routeurs qui eux repetent le signal Zigbee.
 
-Voici quelques procédures à suivre lors de la découverte des dispositifs Zigbee pour constituer un réseau solide... La patience reste la clef du succès.
+Voici quelques procédures à suivre lors de la découverte des objets Zigbee pour constituer un réseau solide... La patience reste la clef du succès.
 
-### Jusqu'à 32 dispositifs alimentés sur batterie
-1. Faites l'appairage de vos dispositifs l'un après l'autre; attendez la fin de l'appairage du dispositif pour tenter l'appairage du suivant. Voir les intructions d'appairage propres à votre materiel et au dispositif pour plus de détail.
-2. La distance entre le dispositif et la Zigate, les matériaux de construction (murs), les objets métalliques et les performances du composant vont déterminer l'eloignement maximum du dispositif sans perte de connexion avec la Zigate
+### Jusqu'à 40 objets alimentés sur batterie
+1. Faites l'appairage de vos objets l'un après l'autre; attendez la fin de l'appairage de l' objet pour tenter l'appairage du suivant. Voir les intructions d'appairage propres à votre materiel pour plus de détail.
+2. La distance entre le objet et la ZiGate mais également les matériaux de construction (murs), les objets métalliques et les performances du composant vont déterminer l'éloignement maximum du objet sans perte de connexion avec la Zigate
 
-### Au dela de 32 dispositifs
+### Au delà de 32 objets
+La ZiGate supporte jusqu'à 40 objets en connexion directe. Vous pouvez étendre cette limitations en utilisant les objets alimentés sur le secteur disposant de la fonction répéteur/routeur; on appelle ces objets, des objets routeurs.
+Les objets connectés alimentés sur batterie n'écoutent pas le réseau Zigbee et de ce fait ne peuvent exercer une fonction de routeur; on appelle aussi ces objets des objets terminaux.
+Les objets terminaux ne communiquent qu'avec un parent qui peut être soit la ZiGate elle même ou bien un objet routeur. Les objets routeurs, quant à eux, communiquent avec la ZiGate et les objets terminaux.
+Bien entendu, votre environnement, la distance entre la ZiGate et le plus éloigné des objets, le nombre d'objets routeurs intégrés dans votre réseau va déterminer le nombre maximun d'objets que pourra contenir votre réseau ZigBee sous réserve d'avoir suffisament d'objets routeur correctement répartis en distance avec la ZiGate mais également entre eux.
 
-32 or more Zigbee devices
-Hubitat Elevation™ can support up to 32 end devices (devices connected directly to the hub without the help of a repeating device). Beyond 32 battery powered or non-repeating end devices, you must add mains powered repeating devices. A Zigbee repeating device is one that is plugged into an outlet or powered by mains voltages. Battery powered Zigbee devices do not repeat signals. End devices only communicate with a parent device, which could be the hub or it could be a repeater. Zigbee repeating devices (Routers) communicate with both the hub and End devices. Your environment, distance to the furthest device from the hub, and the range of the Zigbee repeating devices will determine the correct number of repeating devices required. Unlike Z-Wave, there is no limit to the number of Zigbee devices that can be added to your network, as long as there are an adequate number of repeating devices and they are properly distanced from each other.
+
+### La construction du réseau
+Appairer vos objets routeur l'un après l'autre; même si cela peut vous paraitre long (journée), stabilisez votre réseau entre chaque appairage. Une fois tous les objets routeur appairés et le réseau Zigbee stabilisé, vous pouvez commencer l'appairage des objets terminaux
 
 Pair your Zigbee repeating devices one at a time. See Discovering your Devices for detail instructions on adding devices to your Hubitat Elevation™ hub.
 Now pair your Zigbee battery powered devices one at a time, in their intended location, within range of either the hub or a Zigbee router. See Discovering your Devices for detail instructions on adding devices to your Hubitat Elevation™ hub.
