@@ -21,21 +21,22 @@ Voici quelques procédures à suivre lors de la découverte des objets Zigbee po
 1. Faites l'appairage de vos objets l'un après l'autre; attendez la fin de l'appairage de l' objet pour tenter l'appairage du suivant. Voir les intructions d'appairage propres à votre materiel pour plus de détail.
 2. La distance entre le objet et la ZiGate mais également les matériaux de construction (murs), les objets métalliques et les performances du composant vont déterminer l'éloignement maximum du objet sans perte de connexion avec la Zigate
 
-### Au delà de 32 objets
-La ZiGate supporte jusqu'à 40 objets en connexion directe. Vous pouvez étendre cette limitations en utilisant les objets alimentés sur le secteur disposant de la fonction répéteur/routeur; on appelle ces objets, des objets routeurs.
+### Au delà de 40 objets
+La ZiGate supporte jusqu'à 40 objets en connexion directe. Vous pouvez étendre cette limitation en utilisant les objets alimentés sur le secteur disposant de la fonction répéteur/routeur; on appelle ces objets, des objets routeurs.
 Les objets connectés alimentés sur batterie n'écoutent pas le réseau Zigbee et de ce fait ne peuvent exercer une fonction de routeur; on appelle aussi ces objets des objets terminaux.
 Les objets terminaux ne communiquent qu'avec un parent qui peut être soit la ZiGate elle même ou bien un objet routeur. Les objets routeurs, quant à eux, communiquent avec la ZiGate et les objets terminaux.
 Bien entendu, votre environnement, la distance entre la ZiGate et le plus éloigné des objets, le nombre d'objets routeurs intégrés dans votre réseau va déterminer le nombre maximun d'objets que pourra contenir votre réseau ZigBee sous réserve d'avoir suffisament d'objets routeur correctement répartis en distance avec la ZiGate mais également entre eux.
 
 
 ### La construction du réseau
-Appairer vos objets routeur l'un après l'autre; même si cela peut vous paraitre long (journée), stabilisez votre réseau entre chaque appairage. Une fois tous les objets routeur appairés et le réseau Zigbee stabilisé, vous pouvez commencer l'appairage des objets terminaux
+Appairer vos objets routeur l'un après l'autre; même si cela peut vous paraitre long (journée), stabilisez votre réseau entre chaque appairage. Une fois tous les objets routeur appairés et le réseau Zigbee stabilisé, vous pouvez alors commencer l'appairage des objets terminaux
 
-Pair your Zigbee repeating devices one at a time. See Discovering your Devices for detail instructions on adding devices to your Hubitat Elevation™ hub.
-Now pair your Zigbee battery powered devices one at a time, in their intended location, within range of either the hub or a Zigbee router. See Discovering your Devices for detail instructions on adding devices to your Hubitat Elevation™ hub.
-When all of your devices have been added, power down your hub for 20 minutes. After booting Hubitat Elevation™ again, your Zigbee mesh will automatically choose the best route for your devices within approximately a 24 hour period. Alternatively, you can wait several days for the Zigbee mesh to establish the best path for communication between the hub and your devices by itself.
-How Zigbee Repeaters (Routers) Work
-A Zigbee repeater or router, is a messenger that relays information, until the messages between end devices and the hub have reached one another.
+Quand tous vos objets sont appairés, arrêtez votre ZiGate durant une vingtaine de minutes. Après ce délai, redemarrez votre ZiGate alors le maillage Zigbee choisira la meilleur route pour interconnecter les objets en 24h environ. Si vous ne souhaitez pas ou pouvez pas arrêter/redémarrer votre ZiGate vous pouvez attendre plusieurs jours (2-3j) pour que le réseau maillé établisse les meilleures routes entre votre ZiGate et les objets connectés.
+
+
+## Comment fonctionnent les routeurs Zigbee ?
+Les routeurs Zigbee (ou répéteur) relaient les informations entre la ZiGate et l'objet destination en assurant la transmission (validation de réception).
+Comme mentionné plus haut, un routeur est un objet connecté qui tire son alimentation du secteur (220v pour la France); attention, cependant avec les ampoules qui peuvent 
 
 Zigbee repeaters may be any device that will always powered by mains voltages (but be cautious with Zigbee bulbs that may repeat; see Tips for designing your Zigbee mesh). A Zigbee outlet is an example of a repeater acting as a relay point for devices that are too far from the hub to reliably send and receive signals. ZigBee and Z-Wave are two different wireless protocols, therefore a mains powered ZigBee device can only function as a repeater for other ZigBee devices, and Z-Wave devices only act as repeaters for other Z-Wave devices.
 
