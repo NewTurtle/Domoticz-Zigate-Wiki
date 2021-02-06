@@ -47,7 +47,7 @@ Quand un router/répéteur est positionné entre un objet terminal et la ZiGate,
 
 Les routeurs ont la possibilité de communiquer, non seulement avec les objets terminaux mais également entre eux afin de constituter un puissant et stable réseau maillé Zigbee.
 
-![](../Images/ZigateMeshNwk_Multi.png)
+![](../Images/ZigateMeshNwk_MultiRouteur.png)
 
 Les objets alimentés sur batterie doivent toujours avoir un parent avec lequel communiquer : c'est soit la ZiGate, soit un objet routeur/répéteur. Lorsqu'un objet rejoint pour la premiere fois le réseau Zigbee, il choisira le parent qui offre la meilleure qualité de signal. Une fois le parent choisi, il reste attaché à ce parent jusqu'à ce qu'il n'y ait plus aucune communication possible : la relation entre le parent et l'objet est exclusive, même si un autre parent nouvellement introduit dans le réseau offre un meilleur signal. C'est seulement lorsque la communication entre l'objet et le parent est rompue sur une longue periode que l'objet va sélectionner un nouveau parent. Cependant, si l'objet arrive à communiquer, meme occasionellement avec la ZiGate, il ne sélectionnera pas un nouveau parent.
 
